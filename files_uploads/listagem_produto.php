@@ -18,10 +18,10 @@ while($linha=mysqli_fetch_assoc($resultado)) {
 <p>Descrição:<input type ="text" name = "descprod" value="<?php echo $linha['descprod']?>"></p> 
 <button type="submit" name="acao" value="editar"> Editar </button>
 <button type="submit" name="acao" value="excluir" onclick = "return confirma_excluir()"> Deletar </button> 
-</form>                                                         
+</form>
 </section>
 <?php
 }
 ?>
-<a href='index.php'>Voltar </a>
+<a href='form_pessoa_produto.php'>Voltar </a>
 <a href='sair.php'>Sair</a>
