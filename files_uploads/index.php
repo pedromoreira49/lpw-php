@@ -11,9 +11,9 @@ Senha : <input type="password" name="senha">
 </form>
 
 <div id='msg'>
-<?php 
+<?php
 if(isset($_SESSION['msg']))
-{ 
+{
 	echo $_SESSION['msg'];
 	unset($_SESSION['msg']);
 }
