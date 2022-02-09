@@ -31,4 +31,5 @@ if((!isset($_SESSION['email'])) && (!isset($_SESSION['logado'])))
 
 <a href='listagem_usuario.php'>Edição de Usuários</a>
 <a href='listagem_produto.php'>Edição de Produtos</a>
+<a href='avaliacoes_produtos.php'>Avaliações de Produtos</a>
 <a href='sair.php'>Sair</a>
