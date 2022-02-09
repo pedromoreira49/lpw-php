@@ -1,5 +1,5 @@
 <?php
-
+	include 'conecta.php';
 	echo 'hello world';
 
 ?>
