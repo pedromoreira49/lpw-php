@@ -19,5 +19,5 @@ else
 }
 
 ?>
-<br><a href='index.php'>Voltar </a>
+<br><a href='form_pessoa_produto.php'>Voltar </a>
 <a href='sair.php'>Sair</a>
