@@ -5,6 +5,6 @@
 ?>
 
 <br />
-<a href='listagem_usuario.php'>Voltar</a>
+<a href='form_pessoa_produto.php'>Voltar</a>
 <br />
 <a href='sair.php'>Sair</a>
