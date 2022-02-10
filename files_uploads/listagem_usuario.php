@@ -7,7 +7,8 @@ $sql = "select * from pessoa order by codpessoa";
 
 $resultado = mysqli_query($conexao,$sql);
 
-echo "<a href='form_pessoa_produto.php'>Voltar </a>";
+echo "<a style='float: left;' href='form_pessoa_produto.php'>Voltar </a> <br />";
+
 while($linha=mysqli_fetch_assoc($resultado)) {
 	include('dados_usuario.php');
 }
