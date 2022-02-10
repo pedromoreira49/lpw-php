@@ -5,7 +5,7 @@ include 'nav-bar.php';
 
 $sql = "select * from produto order by codproduto";
 
-echo "<a href='form_pessoa_produto.php'>Voltar </a>";
+echo "<a style='float: left;' href='form_pessoa_produto.php'>Voltar </a> <br />";
 
 $resultado = mysqli_query($conexao,$sql);
 
