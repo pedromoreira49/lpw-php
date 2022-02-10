@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>lpw-tsi dashboard</title>
+  <title>lpw-tsi users</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./style.css">
 </head>
@@ -10,6 +10,7 @@
 <div class="wrapper-2">
 	<section>
 		<form action="edicao_usuario.php" method="post" id="formvalidate">
+			<p>ID: <?php echo $linha['codpessoa']; ?></p>
 			<input type ="hidden" name = "codpessoa" value="<?php echo $linha['codpessoa']?>">
 			<div class="input-group">
 		        <label class="palceholder" for="nome"></label>
