@@ -7,8 +7,7 @@ if($_POST['acao']=='editar')
     $nomeprod= $_POST['nomeprod'];
     $descprod=$_POST['descprod'];
 
-    $SQL= "update pessoa set nomeprod='$nomeprod', descprod='$descprod'  where codproduto = '$codproduto'";
-
+    $SQL= "update produto set nomeprod='$nomeprod', descprod='$descprod'  where codproduto = '$codproduto'";
     $resultado=mysqli_query($conexao,$SQL);
 
     if($resultado)
