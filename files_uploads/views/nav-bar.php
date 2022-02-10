@@ -4,7 +4,7 @@
       <ul class="main-nav">
           <li><a href="listagem_usuario.php">Ed. User</a></li>
           <li><a href="listagem_produto.php">Ed. Product</a></li>
-          <li><a href="avaliacoes_produtos.php">Rate Product</a></li>
+          <li><a href="listagem_avaliacao.php">Rate Product</a></li>
           <li><a href="sair.php">Logout</a></li>
       </ul>
   </header> 

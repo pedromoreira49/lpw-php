@@ -2,10 +2,12 @@
 
 $obsprod = $_POST['observacao'];
 $nota = $_POST['nota'];
+$codproduto = $_POST['codproduto'];
+$codpessoa = $_POST['codpessoa'];
 
 include 'conecta.php';
 
-$sql = "insert into avaliacao (observacao, nota) values ('$obsprod', '$nota')";
+$sql = "insert into avaliacao (observacao, nota, produto_id, usuario_id) values ('$obsprod', '$nota','$codproduto', '$codpessoa')";
 
 $resultado = mysqli_query($conexao, $sql);
 
