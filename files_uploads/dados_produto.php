@@ -22,6 +22,7 @@
 		        <input class="form-control" name="descprod" type="text" value="<?php echo $linha['descprod'];?>">
 		        <span class="lighting"></span>
 		     </div>
+		  <a href="dados_avaliacao.php">Avaliar</a>
 			<button type="submit" name="acao" value="editar"> Editar </button>
 			<button type="submit" name="acao" value="excluir" onclick = "return confirma_excluir()"> Deletar </button> 
 		</form>

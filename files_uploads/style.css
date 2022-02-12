@@ -153,6 +153,24 @@ span.validate-tooltip {
   padding:  50px 30px 60px;
   margin: 30px;
 }
+.wrapper-3{
+  width: 50px;
+  background: #fff;
+  margin: 20px auto;
+  min-height: 30px;
+  padding: 25px 15px 30px;
+  margin-top: 15px;
+  float: left;
+}
+.button-c{
+  background: #00A885;
+  border: 0;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 14px;
+  -webkit-transition: 0.3s linear;
+  float: left;
+}
 .wrapper .inner-warpper {
   padding: 50px 30px 60px;
   box-shadow: 1px 1.732px 10px 0px rgba(0, 0, 0, 0.063);

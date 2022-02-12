@@ -22,6 +22,5 @@ CREATE TABLE avaliacao (
 codavaliacao INT(6) AUTO_INCREMENT PRIMARY KEY,
 observacao VARCHAR(200) NOT NULL,
 nota INT(3) NOT NULL,
-produto_id int(6) NOT NULL,
-usuario_id int(6) NOT NULL
+produto_id int(6) NOT NULL
 );

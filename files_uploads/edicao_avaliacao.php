@@ -3,11 +3,12 @@ include "conecta.php";
 if($_POST['acao']=='editar')
 {
 
-    $codproduto= $_POST['codproduto'];
-    $nomeprod= $_POST['nomeprod'];
-    $descprod=$_POST['descprod'];
+    $codavaliacao= $_POST['codavaliacao'];
+    $observacao= $_POST['observacao'];
+    $nota=$_POST['nota'];
 
-    $SQL= "update produto set nomeprod='$nomeprod', descprod='$descprod'  where codproduto = '$codproduto'";
+    $SQL= "update avaliacao set observacao='$observacao', nota='$nota' where codavaliacao = '$codavaliacao';";
+
     $resultado=mysqli_query($conexao,$SQL);
 
     if($resultado)
@@ -25,9 +26,8 @@ else if($_POST['acao'] == 'enviar'){
    $codproduto = $_POST['codproduto'];
    $observacao = $_POST['observacao'];
    $nota = $_POST['nota'];
-   $codpessoa = $_POST['codpessoa'];
 
-   $sqli = "insert into avaliacao (observacao, nota, produto_id, usuario_id) values ('$observacao', '$nota','$codproduto', '$codpessoa');";
+   $sqli = "insert into avaliacao (observacao, nota, produto_id) values ('$observacao', '$nota','$codproduto');";
 
 
    $result = mysqli_query($conexao, $sqli);
@@ -46,9 +46,9 @@ else
   if($_POST['acao']=='excluir')
   {
 
-    $codproduto= $_POST['codproduto'];
+    $codavaliacao= $_POST['codavaliacao'];
 
-    $SQL= "delete from produto where codproduto = '$codproduto'";
+    $SQL= "delete from avaliacao where codavaliacao = '$codavaliacao'";
     //echo $SQL;
 
     $resultado=mysqli_query($conexao,$SQL);

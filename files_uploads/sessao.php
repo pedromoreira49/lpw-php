@@ -6,6 +6,7 @@
 
 	$result = mysqli_query($conexao, $sql);
 
-	$line = mysqli_fetch_assoc($result);
-
+	while($line = mysqli_fetch_assoc($result)){
+		include 'dados_avaliacao.php';
+	}
 ?>
