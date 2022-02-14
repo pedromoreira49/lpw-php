@@ -22,23 +22,6 @@ if($_POST['acao']=='editar')
     }
 
 }
-else if($_POST['acao'] == 'enviar'){
-   $codproduto = $_POST['codproduto'];
-   $observacao = $_POST['observacao'];
-   $nota = $_POST['nota'];
-
-   $sqli = "insert into avaliacao (observacao, nota, produto_id) values ('$observacao', '$nota','$codproduto');";
-
-
-   $result = mysqli_query($conexao, $sqli);
-   if($result){
-      echo "Produto avaliado com sucesso";
-   }else{
-      echo 'Código de erro:'.mysqli_errno( $conexao ).'<br>';
-       echo 'Mensagem de erro:'.mysqli_error( $conexao).'<br>';
-   }
-
-}
 else
 {
 

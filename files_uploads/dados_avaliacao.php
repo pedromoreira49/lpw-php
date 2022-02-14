@@ -18,19 +18,8 @@
                 <p> <?php echo $linha['descprod'];?> </p>
                 <span class="lighting"></span>
             </div>
-          <form action="edicao_avaliacao.php" method="post" id="formvalidate">
+          <form action="cadastro_avaliacao.php" method="post" id="formvalidate">
             <input type="hidden" name="codproduto" value="<?php echo $linha['codproduto']; ?>">
-            <?php 
-                include "conecta.php";
-                $codproduto = $linha['codproduto'];
-                $sqli = "select * from avaliacao where produto_id='$codproduto';";
-
-                $result = mysqli_query($conexao,$sqli);
-
-                while($line=mysqli_fetch_assoc($result)) {
-                    include 'avaliacao.php';
-                }
-            ?>
             <div class="input-group">
                 <label class="palceholder" for="observacao"></label>
                 <input class="form-control" name="observacao" id="userName" type="text" placeholder="Observação"/>
@@ -41,8 +30,21 @@
                 <input class="form-control" name="nota" id="userName" type="text" placeholder="Nota"/>
                 <span class="lighting"></span>
             </div>
-            <button type="submit" name="acao"id="login" value="enviar">Enviar</button>
-          </form>
+            <button name="acao" value="enviar">Enviar</button>
+            </form>
+            <div class="inner-warpper">
+                <?php 
+                    include "conecta.php";
+                    $codproduto = $linha['codproduto'];
+                    $sqli = "select * from avaliacao where produto_id='$codproduto';";
+
+                    $result = mysqli_query($conexao,$sqli);
+
+                    while($line=mysqli_fetch_assoc($result)) {
+                        include 'avaliacao.php';
+                    }
+                ?>
+            </div>
         </section>
   </div>
 </body>
